@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 380px;
+  background-color: rgb(60, 60, 60);
+  /* background-color: aliceblue; */
+
+  user-select: none;
+  -webkit-user-select: none; 
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+}
+
+.logo {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.logo > img {
+  width: 17rem;
+  margin-top: 30px;
+}
+
+.search {
+  width: 21px;
+}
+
+.item-box {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.item-box > * {
+  height: 90px;
+  width: 90px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner {
+  height: 2.5em;
+  width: 2.5em;
+  border-radius: 50%;
+  background-color: rgb(73, 73, 73);
+  /* background-color: rgb(0, 90, 139); */
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 10px;
+}
+
+.inner > a {
+  text-decoration: none;
+  color: wheat;
+}
+
+.item-box > .item:hover {
+  background-color: rgba(83, 82, 82, 0.838);
+  /* background-color: rgb(203, 209, 214); */
+}
+
+.main1 {
+  width: 100%;
+  text-align: center;
+
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.sub-main {
+  width: 50%;
+  background-color: rgb(255, 255, 255);
+  height: 40px;
+  border: 0px solid transparent;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  /* box-shadow: 0px 0px 2px; */
+}
+
+.sub-main > input {
+  width: 78%;
+  height: 39px;
+  border: none;
+  background-color: transparent;
+
+}
+
+.sub-main  > input:focus {
+  outline: none;     
+  border: none;     
+
+}
+
+.img {
+  height: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.sub-main button > .camera,
+.mic {
+  width: 20px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+@media (max-width: 550px) {
+  .logo > img {
+    width: 15rem;
+  }
+
+  .search-box > input {
+    width: 85%;
+    height: 30px;
+    border: 0px solid transparent;
+    border-radius: 30px;
+  }
+
+  .item-box > * {
+    height: 80px;
+    width: 80px;
+  }
+
+  .item-box {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .hide {
+    position: absolute;
+    opacity: 0;
+  }
+  .sub-main {
+    width: 85%;
+  }
+  #camera {
+    padding-right: 10px;
+  }
+}
